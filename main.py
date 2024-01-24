@@ -29,7 +29,7 @@ def decrypt_file(input_file, output_file, shift):
 
 # Example usage:
 input_filename = 'input.txt'
-output_filename_encrypted = 'encrypted_output.txt'
+output_filename_encrypted = 'input.txt'
 output_filename_decrypted = 'decrypted_output.txt'
 shift_amount = 3
 
