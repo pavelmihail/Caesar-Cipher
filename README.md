@@ -12,9 +12,10 @@ This Python script demonstrates a simple implementation of the Caesar cipher for
 1. Clone the Repository:
 
 ```
-git clone https://github.com/pavelmihail/Caesar-Cypher.git
-
-cd caesar-cipher
+git clone https://github.com/pavelmihail/Caesar-Cipher.git
+```
+```
+cd Caesar-Cipher
 ```
 2. Run the Script:
 
@@ -23,7 +24,7 @@ cd caesar-cipher
 * Run the script:
 
 ```
-python caesar_cipher.py
+python Caesar-Cipher.py
 ```
 * The encrypted output will be written to encrypted_output.txt.
 
