@@ -1,10 +1,2 @@
-Elephant
-Sunshine
-Adventure
-Python
-Harmony
-Mystery
-Galaxy
-Whisper
-Enigma
-Radiant
+12
+Hello world!

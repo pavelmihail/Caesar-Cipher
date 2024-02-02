@@ -11,13 +11,18 @@ def caesar_cipher(text, shift):
 
     return result
 
-def encrypt_file(input_file, output_file, shift):
+
+def encrypt_file(input_file, output_file):
     with open(input_file, 'r') as file:
+        shift = int(file.readline())
         plaintext = file.read()
         encrypted_text = caesar_cipher(plaintext, shift)
 
     with open(output_file, 'w') as file:
         file.write(encrypted_text)
+
+    return shift
+
 
 def decrypt_file(input_file, output_file, shift):
     with open(input_file, 'r') as file:
@@ -27,14 +32,14 @@ def decrypt_file(input_file, output_file, shift):
     with open(output_file, 'w') as file:
         file.write(decrypted_text)
 
+
 # Example usage:
 input_filename = 'input.txt'
-output_filename_encrypted = 'input.txt'
+output_filename_encrypted = 'output.txt'
 output_filename_decrypted = 'decrypted_output.txt'
-shift_amount = 3
 
 # Encrypt the content of the input file and write to an encrypted output file
-encrypt_file(input_filename, output_filename_encrypted, shift_amount)
+shift_amount = encrypt_file(input_filename, output_filename_encrypted)
 
 # Decrypt the content of the encrypted output file and write to a decrypted output file
 decrypt_file(output_filename_encrypted, output_filename_decrypted, shift_amount)
